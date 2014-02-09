@@ -2,7 +2,7 @@ Getting started...
 ==================
 
 ```
-git clone https://BpCodingDojo@github.com/BpCodingDojo/FluentCalculator.git
+git clone https://BpCodingDojo@github.com/BpCodingDojo/AnagramsKata.git
 ```
 
 ### ...and finished
