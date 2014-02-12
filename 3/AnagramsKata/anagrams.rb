@@ -3,23 +3,20 @@ module AnagramsKata
   class Anagrams
 
     def initialize
-      @groups = []
+      @groups = {}
     end
 
 
 
     def add(word)
-      if @groups.empty?
-        @groups << []
-      end
-
-      @groups.first << word.word
+      @groups[word.key] = [] unless @groups.has_key?(word.key)
+      @groups[word.key] << word.word
     end
 
 
 
     def groups
-      @groups
+      @groups.values
     end
   end
 
