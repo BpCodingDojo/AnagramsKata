@@ -24,6 +24,13 @@ module AnagramsKata
       end
     end
 
+    describe '#word' do
+      it 'should return the original word used for construction' do
+
+        expect(Word.new('cba').word).to eq 'cba'
+      end
+    end
+
   end
 end
 
