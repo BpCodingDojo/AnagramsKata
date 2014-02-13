@@ -25,7 +25,7 @@ module AnagramsKata
       context "initialized with a non empty file" do
 
         it 'should return anagram groups found in the file' do
-          allow(file).to receive(:each_line).and_yield('alma').and_yield('korte').and_yield('lama')
+          allow(file).to receive(:each_line).and_yield("alma\n").and_yield("korte\n").and_yield("lama\n")
 
           expect(finder.find_anagrams).to eq [['alma', 'lama'], ['korte']]
         end
